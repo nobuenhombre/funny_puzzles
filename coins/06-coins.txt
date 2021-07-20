@@ -9,25 +9,31 @@ m1 + m2 + m3 != m4 + m5 + m6
 -- не дает решения - дробим мельче
 
 Используем варианты
-A) m1? + m2? == m3? + m4? != m5? + m6?
-B) m1? + m2? != m3? + m4? == m5? + m6?
+SCHEMA-1 :: m1? + m2? == m3? + m4? !== m5? + m6?
+SCHEMA-2 :: m1? + m2? != m3? + m4? === m5? + m6?
 
-A)
-1.1 [(m1? + m2?) == (m3? + m4?)] -> @ m1G, m2G, m3G, m4G, m5?, m6? @
-1.2A [m4G == m5?] -> $ m1G, m2G, m3G, m4G, m5G, m6F $
-1.2B [m4G != m5?] -> $ m1G, m2G, m3G, m4G, m5F, m6G $
+МОЯ КЛИНОПИСЬ
+=============
 
-B)
-2.1 [(m1? + m2?) != (m3? + m4?)] -> @ m1?, m2?, m3?, m4?, m5G, m6G @
--- теперь решение для 4-х монет
-    2.1.2  [m1? == m2?]  -> @ m1G, m2G, m3?, m4?, m5G, m6G @
-    2.1.3A [m1G == m3?]  -> $ m1G, m2G, m3G, m4F, m5G, m6G $
-    2.1.3B [m1G != m3?] -> $ m1G, m2G, m3F, m4G, m5G, m6G $
+SCH-1::WEI-1        [(m1? + m2?) == (m3? + m4?)] -> @ m1G, m2G, m3G, m4G, m5?, m6? @
+SCH-1::WEI-2::VAR-1 [m4G == m5?] -> $ m1G, m2G, m3G, m4G, m5G, m6F $
+SCH-1::WEI-2::VAR-2 [m4G != m5?] -> $ m1G, m2G, m3G, m4G, m5F, m6G $
+total 2
 
-    2.2.2  [m1? != m2?] -> @ m1?, m2?, m3G, m4G, m5G, m6G @
-    2.2.3A [m3G == m1?] -> $ m1G, m2F, m3G, m4G, m5G, m6G $
-    2.2.3B [m3G != m1?] -> $ m1F, m2G, m3G, m4G, m5G, m6G $
+SCH-2::WEI-1 [(m1? + m2?) != (m3? + m4?)] -> @ m1?, m2?, m3?, m4?, m5G, m6G @
+-- далее берем клинопись от 4-х монет
 
+SCH-2::VAR-1::WEI-2        [m1? == m2?] -> @ m1G, m2G, m3?, m4?, m5G @
+SCH-2::VAR-1::WEI-3::VAR-1 [m1G == m3?] -> $ m1G, m2G, m3G, m4F, m5G $
+SCH-2::VAR-1::WEI-3::VAR-2 [m1G != m3?] -> $ m1G, m2G, m3F, m4G, m5G $
+total 3
+
+SCH-2::VAR-2::WEI-2        [m1? != m2?] -> @ m1?, m2?, m3G, m4G, m5G @
+SCH-2::VAR-2::WEI-3::VAR-1 [m3G == m1?] -> $ m1G, m2F, m3G, m4G, m5G $
+SCH-2::VAR-2::WEI-3::VAR-2 [m3G != m1?] -> $ m1F, m2G, m3G, m4G, m5G $
+total 3
+
+min 2, max 3
 
 ВЫВОДЫ
 ======

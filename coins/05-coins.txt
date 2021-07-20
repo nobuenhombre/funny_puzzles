@@ -32,6 +32,8 @@ SCH-2::VAR-2::WEI-3::VAR-1 [m3G == m1?] -> $ m1G, m2F, m3G, m4G, m5G $
 SCH-2::VAR-2::WEI-3::VAR-2 [m3G != m1?] -> $ m1F, m2G, m3G, m4G, m5G $
 total 3
 
+min 1, max 3
+
 ВЫВОДЫ
 ======
 ГРУППА из 5-ти монет
