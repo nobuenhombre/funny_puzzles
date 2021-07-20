@@ -22,7 +22,7 @@ A
 
 1.1  [m5? == m6?]  -> @ m5G, m6G, m7?, m8? @
 1.2A [m5G == m7?]  -> $ m5G, m6G, m7G, m8F $
-1.2B [m5G !== m7?] -> $ m5G, m6G, m7F, m8G $
+1.2B [m5G != m7?] -> $ m5G, m6G, m7F, m8G $
 
 2.1  [m5? != m6?] -> @ m5?, m6?, m7G, m8G @
 2.2A [m7G == m5?] -> $ m5G, m6F, m7G, m8G $
