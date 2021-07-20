@@ -50,13 +50,21 @@ m1 + m2 == m3 + m4
 
 Схема взвешиваний описана.
 
+SCHEMA-1 :: m1? == m2?, m3? !== m4?
+SCHEMA-2 :: m1? != m2?, m3? === m4?
+
+
 МОЯ КЛИНОПИСЬ
 =============
 
-1.1  [m1? == m2?]  -> @ m1G, m2G, m3?, m4? @
-1.2A [m1G == m3?]  -> $ m1G, m2G, m3G, m4F $
-1.2B [m1G !== m3?] -> $ m1G, m2G, m3F, m4G $
+SCH-1::WEI-1        [m1? == m2?] -> @ m1G, m2G, m3?, m4? @
+SCH-1::WEI-2::VAR-1 [m1G == m3?] -> $ m1G, m2G, m3G, m4F $
+SCH-1::WEI-2::VAR-2 [m1G != m3?] -> $ m1G, m2G, m3F, m4G $
+total 2
 
-2.1  [m1? != m2?] -> @ m1?, m2?, m3G, m4G @
-2.2A [m3G == m1?] -> $ m1G, m2F, m3G, m4G $
-2.2B [m3G != m1?] -> $ m1F, m2G, m3G, m4G $
+SCH-2::WEI-1        [m1? != m2?] -> @ m1?, m2?, m3G, m4G @
+SCH-2::WEI-2::VAR-1 [m3G == m1?] -> $ m1G, m2F, m3G, m4G $
+SCH-2::WEI-2::VAR-2 [m3G != m1?] -> $ m1F, m2G, m3G, m4G $
+total 2
+
+min 2, max 2
