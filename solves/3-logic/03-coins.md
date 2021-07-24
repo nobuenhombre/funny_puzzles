@@ -62,6 +62,8 @@ total 2
 min 1, max 2
 ```
 
+![Определения](images/000-definitions.png)
+
 ![3 монеты](images/003-coins.png)
 
 [Вперед - Четыре монеты](04-coins.md "04-coins.md")

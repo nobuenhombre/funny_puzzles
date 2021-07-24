@@ -86,4 +86,6 @@ total 2
 min 2, max 2
 ```
 
+![Определения](images/000-definitions.png)
+
 [Вперед - Пять монет](05-coins.md "05-coins.md")
