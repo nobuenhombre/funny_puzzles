@@ -48,8 +48,8 @@ a) любое написание запроса
 
 a) 8 монет
 
-[Решение - 8 монет - coins/08-coins.txt](solves/3-logic/08-coins.txt "coins/08-coins.txt")
+[Решение - 8 монет - coins/08-coins.txt](solves/3-logic/08-coins.md "coins/08-coins.txt")
 
 б) 13 монет
 
-[Решение - 13 монет - coins/13-coins.txt](solves/3-logic/13-coins.txt "coins/13-coins.txt")
+[Решение - 13 монет - coins/13-coins.txt](solves/3-logic/13-coins.md "coins/13-coins.txt")
