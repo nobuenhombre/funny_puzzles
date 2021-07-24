@@ -26,7 +26,7 @@
 [чтение литературы](external_sources/ "чтение литературы") показало что в 1946 году задачу для 12 монет за n-взвешиваний
 решил английский математик [Freeman Dyson](https://en.wikipedia.org/wiki/Freeman_Dyson "Freeman Dyson").
 
-Он описал [способ](external_sources/kvant-1979-10/001.md "external_sources/kvant-1979-10/001.txt")
+Он описал [способ](external_sources/kvant-1979-10/001.md "external_sources/kvant-1979-10/001.md")
  который заключается в определенной маркировке монет в троичной системе счисления
 
 ```
@@ -54,7 +54,7 @@
 
 Вариант 2)
 Мы получим маркер = 111 
-[см. Решение для 12 монет - Freeman Dyson](external_sources/kvant-1979-10/001.md "external_sources/kvant-1979-10/001.txt")
+[см. Решение для 12 монет - Freeman Dyson](external_sources/kvant-1979-10/001.md "external_sources/kvant-1979-10/001.md")
 
  - который не указывает ни на одну монету
 (1)-означает что весы показывали равенство на чашах.
