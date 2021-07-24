@@ -47,8 +47,11 @@ a) любое написание запроса
 с помощью весов надо определить монету за три взвешивания.
 
 a) 8 монет
+
 б) 13 монет
 
 [Вступительные размышления](solves/3-logic/00-intro.md "solves/3-logic/00-intro.md")
+
 [Решение - 8 монет - coins/08-coins.txt](solves/3-logic/08-coins.md "coins/08-coins.txt")
+
 [Решение - 13 монет - coins/13-coins.txt](solves/3-logic/13-coins.md "coins/13-coins.txt")
